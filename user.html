@@ -128,25 +128,141 @@
     <main class=" mt-10 px-[45px]">
         <section class="flex  gap-x-5 bg-white">
             <!-- bảng điểu hướng -->
-            <div class="w-1/5 px-4 py-2.5 rounded-md">
-                <ul>
+            <div class="w-1/5 ">
+                <div class="flex items-center space-x-3 border-b border-gray-300 pb-3 mb-7">
+                    <div class="w-14 h-14 bg-red-500 rounded-full">
+                        <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-[17px] font-medium">trantuan</h3>
+                        <p class="text-xs">tuan@gmai.com</p>
+                    </div>
+                </div>
+                <ul class="space-y-3">
                     <li>
-                        <button class="flex items-center gap-2">
-                            <i class="fa-regular fa-user"></i>
-                            <p>Thông tin cá nhân</p>
+                        <button class="flex justify-between items-center gap-2 py-2 w-full border border-gray-500 rounded-md px-3">
+                            <span class="w-6">
+                                <i class="fa-regular fa-user"></i>
+                            </span>
+                            <p class="grow text-left text-sm">Thông tin cá nhân</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+
+                    </li>
+                    <li>
+                        <button class="flex justify-between items-center gap-2 py-2 w-full border border-gray-500 rounded-md px-3">
+                            <span class="w-6">  
+                                <i class="fa-solid fa-book"></i>    
+                            </span>
+                            <p class="grow text-left text-sm">Quản lý truyện</p>
+                            <i class="fa-solid fa-angle-right"></i>
                         </button>
                     </li>
                     <li>
-                        <button class="flex items-center gap-2">
-                            <i class="fa-regular fa-user"></i>
-                            <p>quản lý</p>
+                        <button class="flex justify-between items-center gap-2 py-2 w-full border border-gray-500 rounded-md px-3">
+                            <span class="w-6">  
+                                <i class="fa-regular fa-gear"></i>   
+                            </span>
+                            <p class="grow text-left text-sm">Cài đặt</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="flex justify-between items-center gap-2 py-2 w-full border border-gray-500 rounded-md px-3">
+                            <span class="w-6">
+                                <i class="fa-regular fa-right-from-bracket"></i>
+                            </span>
+                            <p class="grow text-left text-sm">Đăng xuất</p>
+                            <i class="fa-solid fa-angle-right"></i>
                         </button>
                     </li>
                 </ul>
             </div>
 
             <div class="w-4/5">
+                <div class="flex gap-7">
+                    <div class="w-40 h-40 relative overflow-hidden rounded-full">
+                        <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="">
+                        <label for="uploadFile-avat" class="absolute top-0 left-0 bg-black/40 w-full h-full rounded-full cursor-pointer overflow-hidden transition-all opacity-0 duration-150 hover:opacity-100">
+                            <div class="flex flex-col items-center justify-center w-full h-full">
+                                <i class="fa-solid fa-cloud-arrow-up text-gray-400 text-2xl"></i>
+                                <p class="text-[11px] font-medium text-center text-gray-300">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                            </div>
+                            <input type="file" id="uploadFile-avat" class="hidden">
+                        </label>
+                    </div>
+                    <div class="grow">
+                        <h1 class="text-2xl w-full border-b border-gray-300 pb-3 mb-5 font-semibold">Hồ sơ của tôi</h1>
+                        <div>
+                            <div class="grid grid-cols-2 gap-5">
+                                <!-- user name -->
+                                <div class="flex flex-col ">
+                                    <label for="">Tên người dùng</label>
+                                    <span class="border border-gray-300 w-auto h-[35px] flex items-center px-3">
+                                        <input type="text" class="outline-none w-full">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+    
+                                <!-- UID -->
+                                <div class="flex flex-col ">
+                                    <label for="">UID</label>
+                                    <span class="border border-gray-300 w-auto h-[35px] flex items-center px-3">
+                                        <input type="text" class="outline-none w-full">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </span>
+                                </div>
+    
+                                <!-- email -->
+                                <div class="flex flex-col ">
+                                    <label for="">Email</label>
+                                    <span class="border border-gray-300 w-auto h-[35px] flex items-center px-3">
+                                        <input type="email" class="outline-none w-full">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+    
+                                <!-- password -->
+                                <div class="flex flex-col ">
+                                    <label for="">Password</label>
+                                    <span class="border border-gray-300 w-auto h-[35px] flex items-center px-3">
+                                        <input type="password" class="outline-none w-full">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- gender -->
+                            <div class="">
+                                <h5 class="mb-1 ">Qiới tính</h5>
+                                <div class="flex space-x-5">
+                                    <label for="genderMale" class=" flex items-center space-x-0.5">
+                                        <input type="radio" id="genderMale" class="w-3.5 h-3.5">
+                                        <span class="text-sm cursor-pointer">
+                                            Nam
+                                        </span>
+                                    </label>
+                                    <label for="genderFemale" class=" flex items-center space-x-0.5">
+                                        <input type="radio" id="genderFemale" class="w-3.5 h-3.5">
+                                        <span class="text-sm cursor-pointer">
+                                            Nữ
+                                        </span>
+                                    </label>
+                                    <label for="genderOther" class=" flex items-center space-x-0.5">
+                                        <input type="radio" id="genderOther" class="w-3.5 h-3.5">
+                                        <span class="text-sm cursor-pointer">
+                                            Khác
+                                        </span>
+                                    </label>
+                                </div>
+                                    
+                            </div>
+                            <button class="w-1/5 py-3 bg-red-500">
+                                Lưu
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
+                
             </div>
         </section>
     </main>
