@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
 
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
 
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
 
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
 
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
 </head>
-<style>
-*{
-  font-family: "Open Sans", sans-serif;
-}
-</style>
 <body class="bg-[#e8eef1]">
     <header class="bg-white w-full border-y border-gray-300">
         <!-- header trên -->
@@ -124,7 +122,6 @@
             </div>
         </div>
     </header>
-
     <main class="mt-10 px-[45px]">
         <section class="flex  gap-x-10 bg-white p-7 rounded-lg">
             <!-- bảng điểu hướng -->
@@ -177,215 +174,7 @@
             </div>
 
             <div class="w-4/5">
-                <div class="flex gap-7">
-                    <div class="w-40 h-40 relative overflow-hidden rounded-full">
-                        <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="">
-                        <label for="uploadFile-avat" class="absolute top-0 left-0 bg-black/40 w-full h-full rounded-full cursor-pointer overflow-hidden transition-all opacity-0 duration-150 hover:opacity-100">
-                            <div class="flex flex-col items-center justify-center w-full h-full">
-                                <i class="fa-solid fa-cloud-arrow-up text-gray-400 text-2xl"></i>
-                                <p class="text-[11px] font-medium text-center text-gray-300">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-                            </div>
-                            <input type="file" id="uploadFile-avat" class="hidden">
-                        </label>
-                    </div>
-                    <div class="grow">
-                        <h1 class="text-2xl w-full border-b border-gray-300 pb-3 mb-5 font-semibold">Hồ sơ của tôi</h1>
-                        <div>
-                            <div class="grid grid-cols-2 gap-5">
-                                <!-- user name -->
-                                <div class="flex flex-col ">
-                                    <label for="">Tên người dùng</label>
-                                    <span class="border border-gray-300 w-auto h-[35px] flex items-center px-3">
-                                        <input type="text" class="outline-none w-full">
-                                        <i class="fa-regular fa-pen-to-square"></i>
-                                    </span>
-                                </div>
-    
-                                <!-- UID -->
-                                <div class="flex flex-col ">
-                                    <label for="">UID</label>
-                                    <span class="border border-gray-300 w-auto h-[35px] flex items-center px-3">
-                                        <input type="text" class="outline-none w-full">
-                                        <i class="fa-regular fa-copy"></i>
-                                    </span>
-                                </div>
-    
-                                <!-- email -->
-                                <div class="flex flex-col ">
-                                    <label for="">Email</label>
-                                    <span class="border border-gray-300 w-auto h-[35px] flex items-center px-3">
-                                        <input type="email" class="outline-none w-full">
-                                        <i class="fa-regular fa-pen-to-square"></i>
-                                    </span>
-                                </div>
-    
-                                <!-- password -->
-                                <div class="flex flex-col ">
-                                    <label for="">Password</label>
-                                    <span class="border border-gray-300 w-auto h-[35px] flex items-center px-3">
-                                        <input type="password" class="outline-none w-full">
-                                        <i class="fa-regular fa-pen-to-square"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <!-- gender -->
-                            <div class="">
-                                <h5 class="mb-1 ">Qiới tính</h5>
-                                <div class="flex space-x-5">
-                                    <label for="genderMale" class=" flex items-center space-x-0.5">
-                                        <input type="radio" id="genderMale" class="w-3.5 h-3.5">
-                                        <span class="text-sm cursor-pointer">
-                                            Nam
-                                        </span>
-                                    </label>
-                                    <label for="genderFemale" class=" flex items-center space-x-0.5">
-                                        <input type="radio" id="genderFemale" class="w-3.5 h-3.5">
-                                        <span class="text-sm cursor-pointer">
-                                            Nữ
-                                        </span>
-                                    </label>
-                                    <label for="genderOther" class=" flex items-center space-x-0.5">
-                                        <input type="radio" id="genderOther" class="w-3.5 h-3.5">
-                                        <span class="text-sm cursor-pointer">
-                                            Khác
-                                        </span>
-                                    </label>
-                                </div>
-                                    
-                            </div>
-                            <button class="w-1/5 py-3 bg-red-500">
-                                Lưu
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- history read -->
-                <div>
-                    <div class="flex justify-between items-center mb-3">
-                        <h1 class="text-xl font-semibold">
-                            Lịch sử đọc truyện
-                        </h1>
-                        <div class="flex space-x-2.5">
-                            <button class=" text-gray-600/30 pl-3 pr-1 pt-1 hover:text-gray-600">
-                                <i class="fa-solid fa-angle-left"></i>
-                            </button>
-                            <button class=" text-gray-600/30  pr-3 pl-1 pt-1 hover:text-gray-600">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </button>
-                        </div>
-                        <div>
-                            <a href="#" class="text-[15px] text-zinc-600 relative px-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:transition-all after:duration-500 after:bg-zinc-700  after:rounded-full after:hover:w-full">
-                                Xem tất cả
-                                <i class="fa-solid fa-angle-right ml-0.5"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-2 grid-col-2 overflow-hidden">
-                        <div class="relative bg-white p-3 border border-gray-600 w-full h-40 rounded flex items-start gap-x-3">
-                            <div class="h-full md:min-w-24">
-                                <img src="https://i7.xem-truyen.com/manga/8/8435/55626465uy1200ss1200.thumb_500x.jpg" alt="" class=" h-full">
-                            </div>
-                            <div>
-                                <h2 class="line-clamp-2 leading-5 font-medium mb-2"> 
-                                    Sau khi tình cờ giúp đỡ một bé gái lạc đường, nàng mỹ nữ du học sinh thường xuyên lui tới căn hộ của tôi
-                                </h2>
-                                <div class="text-sm mb-1.5 text-yellow-400">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                    <span class="font-semibold text-black">
-                                        ( 01 )
-                                    </span>
-                                </div>
-
-                                <a href="#" class="font-semibold text-lg text-[#2b38d1]">Chap 3000 <span class="text-[13.5px] font-medium underline italic text-gray-500 hover:text-[#2b38d1] ">đọc tiếp</span> </a>
-
-                                <div class="flex justify-between items-end">
-                                    <a href="#" class="flex items-center space-x-1 mt-2">
-                                        <div class="w-[18.5px] h-[18.5px] rounded-full bg-blue-600 border border-gray-300/90">
-                                            <img src="" alt="">
-                                        </div>
-                                        <p class="text-[12px] line-clamp-1">hikki team</p>
-                                    </a>
-
-                                    <button class="bg-red-500/30 px-2 h-[25px] text-red-500 flex items-center justify-center rounded-full transition-all duration-150 active:scale-75">
-                                        <i class="fa-solid fa-trash text-[13px] leading-tight"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- follow read -->
-                <div>
-                    <div class="flex justify-between items-center mb-3">
-                        <h1 class="text-xl font-semibold">
-                            Truyện theo dỗi
-                        </h1>
-                        <div class="flex space-x-2.5">
-                            <button class=" text-gray-600/30 pl-3 pr-1 pt-1 hover:text-gray-600">
-                                <i class="fa-solid fa-angle-left"></i>
-                            </button>
-                            <button class=" text-gray-600/30  pr-3 pl-1 pt-1 hover:text-gray-600">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </button>
-                        </div>
-                        <div>
-                            <a href="#" class="text-[15px] text-zinc-600 relative px-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:transition-all after:duration-500 after:bg-zinc-700  after:rounded-full after:hover:w-full">
-                                Xem tất cả
-                                <i class="fa-solid fa-angle-right ml-0.5"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-6 gap-x-2 overflow-hidden">
-                        <div class="bg-white px-1.5 py-2 border border-gray-300/50 overflow-hidden  rounded-lg relative cursor-default group/hoverCardPro">
-                            <div class="overflow-hidden aspect-w-full -h-52 mb-2 rounded-md">
-                                <img src="https://i7.xem-truyen.com/manga/8/8435/55626465uy1200ss1200.thumb_500x.jpg" alt="" class="ease-in  group-hover/hoverCardPro:scale-110 transition-all duration-300 ">
-                            </div>
-                            <div class="">
-                                <a href="#" class="h-[3em] line-clamp-2 leading-5 text-sm font-semibold mb-1.5 hover:text-blue-700 ease-in-out duration-300">
-                                    Sau khi tình cờ giúp đỡ một bé gái lạc đường, nàng mỹ nữ du học sinh thường xuyên lui tới căn hộ của tôi
-                                </a>
-                                <div class="text-sm mb-0.5 text-yellow-400">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                    <span class="font-semibold text-black">
-                                        ( 01 )
-                                    </span>
-                                </div>
-                                <a href="#" class="font-semibold text-xl text-[#2b38d1]">Chap 3000</a>
-                                <div class="flex justify-between items-end">
-                                    <a href="#" class="flex items-center space-x-1 mt-2">
-                                        <div class="w-[18.5px] h-[18.5px] rounded-full bg-blue-600 border border-gray-300/90">
-                                            <img src="" alt="">
-                                        </div>
-                                        <p class="text-[12px] line-clamp-1">hikki team</p>
-                                    </a>
-
-                                    <button class="bg-red-500/30 px-2 h-[25px] text-red-500 flex items-center justify-center rounded-full transition-all duration-150 active:scale-75">
-                                        <i class="fa-solid fa-trash text-[13px] leading-tight"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="absolute z-10 top-2 right-2 translate-x-10 opacity-0 duration-500 group-hover/hoverCardPro:translate-x-0 group-hover/hoverCardPro:opacity-100">
-                                <ul class="inline-block space-y-1">
-                                    <li>
-                                        <button class="w-9 h-9 rounded-full flex items-center justify-center text-sm border border-gray-300/70 bg-white">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
     </main>
